@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <p>My name is Vladislav Knyazev 👋</p>
+    <p>I junior frontend developer 💻</p>
+    <p>Really into HTML + CSS ❤️</p>
+    <p>Runs away from JavaScript 👟</p>
+    <button onclick="futurePhil();">Use time machine to transport<br>Tap into the future!</button>
+    <script type="text/javascript">
+        function futurePhil() {
+        var futureLikes = document.querySelector("p:nth-child(3)");
+        futureLikes.innerHTML = "Really into HTML + CSS + JS ❤️";
+        var futureDislikes = document.querySelector("p:nth-child(4)");
+        futureDislikes.innerHTML = "Runs away from frameworks 👟" + "<br><br><p>🎉 Happy New Year 🎉</>";
+        var futureButton = document.querySelector("button");
+        futureButton.style.display = "none";
+        var partyTime = document.querySelector("p:last-child");
+        partyTime.style.transform = "rotate(355deg)";
+}
+    </script>
+</body>
+</html
